@@ -62,3 +62,18 @@ if DUBUG:
         print("You are eligible to vote")
     else:
         print("You are not eligible to vote")
+
+
+        age = 18 
+
+        if age >=18:
+            print("You are eligible to vote")
+
+        elif age < 18:
+            print("You are not eligible to vote")
+        elif age < 60:
+            print("You are a senior citizen")
+        elif age < 18:
+            print("You are a kids")
+        else: 
+            print("Your are a super senior citizen")

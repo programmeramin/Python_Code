@@ -1,5 +1,3 @@
-from doctest import Example
-
 
 x = str(42)
 y = int(3)
@@ -59,3 +57,13 @@ x = 50
 y = "John"
 
 print(x, y)
+
+
+
+# To verify the type of any object in python, use the type function
+
+x = 1
+y = 2.8
+z = 1j
+
+print(type(x))

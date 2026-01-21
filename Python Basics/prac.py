@@ -49,3 +49,16 @@ DUBUG = True
 
 if DUBUG: 
     print(f"Debugging is enabled for {type(a).__name__}")
+
+
+    def add(a,b):
+        return a + b
+    print("sum is:", add(12222223, 4333333))
+
+
+    g = 35
+
+    if g >= 18:
+        print("You are eligible to vote")
+    else:
+        print("You are not eligible to vote")

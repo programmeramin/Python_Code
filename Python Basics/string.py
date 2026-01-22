@@ -32,3 +32,7 @@ Use negative indexes to start the slice from the end of the string:
 Example"""
 y = "Hello, World!"
 print(y[-5:-2])
+
+
+c = "Hello world"
+print(c[2:5])

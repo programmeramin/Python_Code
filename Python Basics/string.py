@@ -7,10 +7,28 @@ consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
 
-print(a)
+#print(a)
 
 x = "Hello world"
-print(x[1])
+#print(x[1])
 
 for x in "Banana":
-    print(x)
+   # print(x)
+
+
+    # slicing strings
+    b = "hello world"
+    #print(b[2:5])
+
+
+
+z = "Hello, world"
+#print(z[2:7])
+
+
+
+"""Negative Indexing
+Use negative indexes to start the slice from the end of the string:
+Example"""
+y = "Hello, World!"
+print(y[-5:-2])

@@ -13,3 +13,6 @@ if (age >= 18) {
 }
 
 
+const g = " Hey there! "
+console.log(g.trim());
+console.log(g);

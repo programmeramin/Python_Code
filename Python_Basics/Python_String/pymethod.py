@@ -58,40 +58,50 @@ txt = "My name is Ståle"
 #print(txt.encode(encoding="ascii",errors="replace"))
 
 
-endw = "Hello, Wellcome to my world."
+
+endw = "Hello, wellcome to my world."
+
 x = endw.endswith(".")
+#print(x)
+
+
+"""Python String expandtabs() Method \t মানে কী?
+
+\t হলো tab character (horizontal tab)
+Terminal-এ এটা সাধারণত বড় ফাঁকা জায়গা নেয়।"""
+
+txt = "H\te\tl\tl\to"
+x = txt.expandtabs(2)
+
+#print(x)
+
+
+#print("A\tB\tC".expandtabs(4))
+
+#Python String find() Method
+txt = "Hello, wellcome to my world."
+
+x = txt.find("wellcome")
+
 print(x)
 
 
+#Where in the text is the first occurrence of the letter "e" when you only search between position 5 and 10?:
+
+txt = "Hello, wellcome to my world."
+
+x = txt.find("e", 5, 10)
+
+print(x)
 
 
+txt1 = "Hello, welcome to my world."
+print(txt1.find("q"))
+#print(txt1.index("q"))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
 
 
 

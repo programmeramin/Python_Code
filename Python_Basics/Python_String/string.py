@@ -25,8 +25,6 @@ for x in "Banana":
 z = "Hello, world"
 #print(z[2:7])
 
-
-
 """Negative Indexing
 Use negative indexes to start the slice from the end of the string:
 Example"""

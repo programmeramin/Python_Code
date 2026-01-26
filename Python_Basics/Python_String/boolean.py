@@ -54,7 +54,6 @@ else:
     print("False")
 
 
-
 class myClass():
     def __len__(self):
         return 5

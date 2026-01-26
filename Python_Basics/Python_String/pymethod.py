@@ -83,7 +83,7 @@ txt = "Hello, wellcome to my world."
 
 x = txt.find("wellcome")
 
-print(x)
+#print(x)
 
 
 #Where in the text is the first occurrence of the letter "e" when you only search between position 5 and 10?:
@@ -92,50 +92,77 @@ txt = "Hello, wellcome to my world."
 
 x = txt.find("e", 5, 10)
 
+#print(x)
+
+#✅ Python String find() Method
+
+txt1 = "Hello, welcome to my world."
+#print(txt1.find("q"))
+#print(txt1.index("q"))
+
+#✅ Python String format() Method Insert the price inside the placeholder, the price should be in fixed point, two-decimal format:
+
+txt = "For only {price: .2f} dollars!"
+#print(txt.format(price = 49))
+
+
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+
+
+# ✅Python String index() Method
+
+txt = "Hello, welcome to my world"
+x = txt.index("Hello, welcome to my world")
+#print(x)
+
+
+txt4 = "Hello, welcome to my world."
+#print(txt4.find("q"))
+#print(txt4.index("q"))
+
+
+txt = "Hello, welcome to my world."
+
+x = txt.index("e", 5, 10)
+
 print(x)
 
 
-txt1 = "Hello, welcome to my world."
-print(txt1.find("q"))
-#print(txt1.index("q"))
+# ✅ Python String isalnum() Method Check if all the characters in the text are alphanumeric:
+
+"""ExampleGet your own Python Server
+Check if all the characters in the text are alphanumeric:"""
+
+txt = "Company12"
+
+x = txt.isalnum()
+
+print(x)
+
+txt = "Company 12"
+
+x = txt.isalnum()
+
+print(x)
 
 
-txt = "For only {price:.2f} dollars!"
-print(txt.format(price = 49))
+#✅ Python String isascii() Method
 
+"""🧠 ASCII কী? (simple)
 
+ASCII = basic English characters:
 
+a–z
 
+A–Z
 
+0–9
 
+space
 
+punctuation (!@#$%) যদি সব ASCII → True
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+একটাও non-ASCII থাকলে → False"""
 

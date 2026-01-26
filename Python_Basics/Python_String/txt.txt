@@ -60,3 +60,12 @@ function add(a, b) {}	def add(a, b):
 {} body	: + indentation
 return	return
 console.log()	print()
+
+
+🎯 What you ACTUALLY need for MERN + AI
+
+✅ lower, strip, replace
+✅ split, join
+✅ encode, decode
+✅ startswith, endswith1
+✅ is*() methods

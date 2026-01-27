@@ -65,3 +65,17 @@ print(thislist)
 thislist = ["apple", "banana", "cherry"]
 thislist.append("orange")
 print(thislist)
+
+
+thisarray = ["apple", "banana", "cherry", "orange", "kiwi", "mango", "watermelon"]
+thisarray[1:3] = ["blackcurrent", "watermelon"]
+print(thisarray)
+
+#Insert Items To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+thisarray.insert(0, "komola")
+print(thislist) 
+print(thisarray)

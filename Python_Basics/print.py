@@ -7,5 +7,13 @@ print("How are you")
 
 print("my name is something\n i am 100 years old")
 
-name = input("Enter your name")
-number = input("Enter your number")
+# name = input("Enter your name")
+# number = input("Enter your number")
+
+
+a = 40
+b = 4
+c =  a // b
+d = a ** b
+print(c)
+print(d)

@@ -77,4 +77,4 @@ print("Status:", program_status)
 print("\nDebugging Task:")
 
 if age >= 18:
-    print("This line has correct indentation and colon.")   
+    print("This line has correct indentation and colon")   

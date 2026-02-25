@@ -11,12 +11,18 @@ monthly_income = float(input("Enter your monthly income: "))
 print()
 
 # ✅ Step 4: Age Check
+
+age = 18
+
 if age < 18:
     print("You are not eligible due to age restriction.")
 else:
     print("Age requirement passed.")
 
 # ✅ Step 5: Grade Evaluation
+
+exam_score = 88
+
 if exam_score >= 90:
     grade = "A"
 elif exam_score >= 75:
@@ -29,6 +35,9 @@ else:
 print("Grade:", grade)
 
 # ✅ Step 6: Scholarship Check
+
+monthly_income = 18000
+
 if monthly_income < 20000 and exam_score > 75:
     scholarship_status = "Eligible"
     print("Eligible for scholarship support.")
@@ -37,8 +46,12 @@ else:
     print("Not eligible for scholarship.")
 
 # ✅ Step 7: Program Result
+
+age = 18
+exam_score = 88
+
 if age >= 18:
-    if exam_score >= 60:
+    if exam_score >= 75:
         program_status = "Passed the program."
         print("You passed the program.")
     else:
@@ -67,11 +80,11 @@ print("Status:", program_status)
 # Fix it and run successfully again.
 
 # ❌ Use wrong indentation once
-# print("\nDebugging Task:") 
+#   print("\nDebugging Task:") 
  
  # ❌ Miss a colon (:)
-#  if age >= 18
-#         print("This line has wrong indentation and missing colon.")
+ # if age >= 18
+  #      print("This line has wrong indentation and missing colon.")
         
 # After fixing the above code:
 print("\nDebugging Task:")

@@ -21,8 +21,7 @@ print(thislist[-4:-1])
 
 if "apple" in thisList:
     print("Yes, apple is in the list fruits")
-
-
+   
 
 #Change Item Value
 #To change the value of a specific item, refer to the index number:

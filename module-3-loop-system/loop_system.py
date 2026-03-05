@@ -44,7 +44,7 @@ print("Loop stopped correctly")
 
 
 
-#📌 Step 8: Debugging Practice
+#📌  Step 8: Debugging Practice
 count = 1
 
 #❌ Wrong Code

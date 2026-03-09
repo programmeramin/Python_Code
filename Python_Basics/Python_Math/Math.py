@@ -39,7 +39,6 @@ print(eval("23+34"))
 
 print(sum((2,4,5,6,3,256)))
 
-
 # sorted
 print(sorted("cabsals"))
 
@@ -50,5 +49,6 @@ print(text[slice(0,4)])
 total = 1
 
 for i in range(1,5):
+    print(i)
     total += i
     print(total)

@@ -53,7 +53,6 @@ print("b) Alexander the graham bell ")
 print("c) Bill gates")
 
 answer = input("Enter your answer: ")
-
 if answer.lower() == "a":
     print("Correct!")
     score += 1
@@ -66,7 +65,7 @@ print("Your Score:", score, "/ 4")
 
 if score == 4:
     print("Excellent!")
-elif score == 3:
+elif score == 30:
     print("Good job!")
 else:
     print("Keep practicing!")

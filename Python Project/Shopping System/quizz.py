@@ -53,7 +53,6 @@ print("b) Alexander the graham bell ")
 print("c) Bill gates")
 
 answer = input("Enter your answer: ")
-
 if answer.lower() == "a":
     print("Correct!")
     score += 1

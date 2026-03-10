@@ -66,7 +66,7 @@ print("Your Score:", score, "/ 4")
 
 if score == 4:
     print("Excellent!")
-elif score == 3:
+elif score == 30:
     print("Good job!")
 else:
     print("Keep practicing!")

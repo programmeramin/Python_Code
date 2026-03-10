@@ -1,9 +1,7 @@
 #📌 Step 2: Program Introduction
 print("Welcome to Daily Life Problem Solver Toolkit")
 
-
 # 📌 Step 3: Menu System
-
 a = 100
 b = 25
 c = 180
@@ -86,3 +84,20 @@ while True:
     else:
         print("Exiting program. Goodbye!")
         break    
+
+
+#📌 Step 8: Debugging Practice
+# age = input("Enter your age: ")   # ❌ Forgot int conversion
+
+# # Step 2: Check eligibility
+# if age >= 18                   # ❌ Missing colon
+#     print("You are eligible to vote")
+# else:
+#     print("You are not eligible to vote")
+
+# correct version
+age = int(input("Enter your age: "))
+if age >= 18:          
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote")

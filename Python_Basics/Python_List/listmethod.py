@@ -25,3 +25,16 @@ pop()	Removes the element at the specified position
 remove()	Removes the item with the specified value
 reverse()	Reverses the order of the list
 sort()	Sorts the list"""
+
+# Lists – index, slice, methods (append, insert)
+
+
+
+name =  ["Amin", "Kemi", "Rahim", "Karim"]
+print(name.index("Karim"))
+print(name[3])
+name.insert(4, "Khairul")
+print(name)
+name.append("Raihan")
+print(name)
+print(name[0 : 3])

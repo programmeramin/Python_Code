@@ -5,11 +5,23 @@
 fruits = ["Apple", "Mango", "Orange", "Cherry"]
 fruits.append("orange")
 
-list = ["Amin", "Rahim", "Karim",]
+list = ["Amin", "Rahim", "Karim","Karim"]
 
 #fruits.append(list)
 
 print(fruits)
+print(fruits.index("Apple"))
+print(list.count("Karim"))
+
+
+numberlist = [1,2,4,5,6,34,67,23]
+
+numberlist.reverse()
+
+print(numberlist)
+
+list.sort()
+print(list)
 
 #clear() Removes all the elements from the list
 
@@ -30,43 +42,59 @@ sort()	Sorts the list"""
 
 
 
-name =  ["Amin", "Kemi", "Rahim", "Karim"]
-print(name.index("Karim"))
-print(name[3])
-name.insert(4, "Khairul")
-print(name)
-name.append("Raihan")
-print(name)
-print(name[0 : 3])
+# name =  ["Amin", "Kemi", "Rahim", "Karim"]
+# print(name.index("Karim"))
+# print(name[3])
+# name.insert(4, "Khairul")
+# print(name)
+# name.append("Raihan")
+# print(name)
+# print(name[0 : 3])
 
 
-#step slicing
-a = [1,2,3,4,5,6,7,8,9]
+# #step slicing
+# a = [1,2,3,4,5,6,7,8,9]
 
-print(a[::2])
+# print(a[::2])
 
-#reverse print
-print(a[::-1])
-print(a[-4:-1])
+# #reverse print
+# print(a[::-1])
+# print(a[-4:-1])
 
-# 2 list with sum
-b = [1,3,4,5]
-c = [6,7,8,9]
+# # 2 list with sum
+# b = [1,3,4,5]
+# c = [6,7,8,9]
 
-b.extend(c)
-print(b)
+# b.extend(c)
+# print(b)
 
-# specific data remove
-number = [1, 23,45,6,45,5,6]
+# # specific data remove
+# number = [1, 23,45,6,45,5,6]
 
-number.pop(5)
-print(number)
+# number.pop(5)
+# print(number)
 
-#list full data remove ok
-student = [23, 23 , "amin islam", 34]
-student.clear()
-print(student)
+# #list full data remove ok
+# student = [23, 23 , "amin islam", 34]
+# student.clear()
+# print(student)
 
-student5 = [23, 23 , "amin islam", 34]
-print(student5.index("amin islam"))
-print(student5.count(34))
+# student5 = [23, 23 , "amin islam", 34]
+# print(student5.index("amin islam"))
+# print(student5.count(34))
+
+# #copy
+# numbers = [2,3,5,6,34,56,23]
+# copy = numbers[4:6]
+# print(copy)
+
+
+# # step slicing
+# a = [1,2,3,4,5,6,7,8,9]
+# print(a[::2])
+# print(a[::3])
+
+
+# #reversed print
+# b = [1,3,3,44,567,23,45,23,56,22,67,34]
+# print(b[::-1])

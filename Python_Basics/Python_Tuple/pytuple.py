@@ -67,3 +67,26 @@ print(thistuple[-4:-1])
 
 if "apple" in thistuple:
     print("Yes, apples in the fruits tuple")
+
+
+# tuple k ami duita var a balue divide kore dilam
+tuple = [23,54,65,23]
+
+a, *b = tuple
+
+print(a)
+print(b)
+
+#value swap
+a = 5
+b = 10
+
+a,b = b,a
+print(a)
+print(b)
+
+a = 10
+b= 23
+
+t = a,b
+print(t )

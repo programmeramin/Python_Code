@@ -31,9 +31,9 @@ while True:
             print("Withdrawal successful!")
             print(f"Remaining balance: {balance}")  
 
-    elif choice == "3":
+    elif choice == "3": 
         amount = float(input(f"Enter your deposit amount: "))
-        if amount > 0:
+        if amount > 0: 
             balance += amount
             transaction.append(f"Deposited: {int(amount)}")
             print("Deposit successful!")
@@ -42,11 +42,11 @@ while True:
             print("Invalid amount! Must be greater than 0.")   
 
     elif choice == "5":
-        print("Thank you for using ATM. Goodbye!")
+        print("Thank you for using ATM. Goodbye! ")
         break
 
     # -------------------------
     # Invalid Input
     # -------------------------
     else:
-        print("Invalid choice! Please select between 1-5.")       
+        print("Invalid choice! Please select between 1-5 .")       

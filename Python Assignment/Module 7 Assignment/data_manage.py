@@ -32,3 +32,7 @@ if delete_name in contacts:
     print("🗑️ Contact deleted successfully!")
 else:
     print("❌ Contact not found!")
+
+
+
+#📌 Step 6: Inventory Categories (Set)

@@ -36,3 +36,12 @@ else:
 
 
 #📌 Step 6: Inventory Categories (Set)
+categories = set()
+
+n = int(input("How many categories you want to add: "))
+
+for i in range(n):
+    category = input("Enter category name: ").lower()
+    categories.add(category)
+
+print("Categories:", categories)

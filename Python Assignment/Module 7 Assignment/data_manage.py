@@ -42,6 +42,41 @@ n = int(input("How many categories you want to add: "))
 
 for i in range(n):
     category = input("Enter category name: ").lower()
-    categories.add(category)
-
+    if  category in categories:
+        print("Doesn't allow duplicate category")
+    else:
+        categories.add(category)
 print("Categories:", categories)
+
+# ✔ Union
+default_categories = {"electronics", "furniture", "food"}
+
+union_result = categories.union(default_categories)
+
+# ✔ Difference
+difference_result = categories.difference(default_categories )
+
+print("\nDefault Categories: ", default_categories)
+print("Union Result", union_result)
+print("Difference Result", difference_result)
+
+#📌 Step 8: Nested Dictionary (Advanced)
+inventory = {
+    "Laptop": {"price": 50000, "stock": 10},
+    "Phone": {"price": 30000, "stock": 20}
+}
+
+for product, details in inventory.items():
+    print(product)
+    print("Price:", details["price"])
+    print("Stock:", details["stock"])
+
+#contact isn't defined
+#print(contacts["Unknown"])
+
+categories.add("food")
+categories.add("food")
+
+print(categories)
+
+#Set automatically unique value রাখে

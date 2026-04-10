@@ -53,3 +53,13 @@ for vot in vote:
         count += 1   # ✅ correct
 
 print("Frequency:", count)    
+
+mx = [
+   [1,2,3],
+   [4,5,6] 
+]    
+
+for r in mx:
+    for i in r:
+        if i == 5:
+            print("found")

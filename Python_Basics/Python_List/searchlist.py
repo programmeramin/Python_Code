@@ -56,10 +56,12 @@ print("Frequency:", count)
 
 mx = [
    [1,2,3],
-   [4,5,6] 
+   [4,5,6],
+   [8,5,6]
 ]    
 
 for r in mx:
+    print(r)
     for i in r:
-        if i == 5:
+        if i == 8:
             print("found")

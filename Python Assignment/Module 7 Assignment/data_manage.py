@@ -72,11 +72,11 @@ for product, details in inventory.items():
     print("Stock:", details["stock"])
 
 #contact isn't defined
-#print(contacts["Unknown"])
+print(contacts["Unknown"])
 
 categories.add("food")
 categories.add("food")
+#Set automatically unique value রাখে
 
 print(categories)
 
-#Set automatically unique value রাখে

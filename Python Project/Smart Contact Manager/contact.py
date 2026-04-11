@@ -44,6 +44,58 @@ def add_contact():
     save_contacts(contacts)
     print("Contact added successfully")
 
+def search_contact():
+    query = input("Search by name or phone: ").lower()
+
+    found = False
+
+    for c in contacts:
+        if query in c["name"].lower() or query in c["phone"]:
+            print(f"{c['name']} - {c['phone']} - {c['email']}")
+            found = True
+
+    if not found:
+        print("No contact found")   
+
+def update_contact():
+    phone = input("Enter phone number to update: ")
+
+    for c in contacts:
+        if c["phone"] == phone:
+            print("Contact found. Leave blank if you don't want to change.")
+
+            new_name = input(f"New name ({c['name']}): ")
+            new_phone = input(f"New phone ({c['phone']}): ")
+            new_email = input(f"New email ({c['email']}): ")
+
+            if new_name:
+                c["name"] = new_name
+            if new_phone:
+                c["phone"] = new_phone
+            if new_email:
+                c["email"] = new_email
+
+            save_contacts(contacts)
+            print("Contact updated successfully")
+            return
+
+    print("Contact not found")
+
+
+def delete_contact():
+    phone = input("Enter phone number to delete: ")
+
+    for c in contacts:
+        if c["phone"] == phone:
+            contacts.remove(c)
+            save_contacts(contacts)
+            print("Contact deleted successfully")
+            return
+
+    print("Contact not found")
+
+
+
 while True:
     print("\n1. Add Contact")
     print("2. Show Contacts")
@@ -61,7 +113,16 @@ while True:
         show_contacts()
 
     elif choice == "3":
-            
+        search_contact()
 
+    elif choice == "4":
+        update_contact()
+
+    elif choice == "5":
+        delete_contact()       
+        
     elif choice == "6":
+        print("Thanks for stay our smart contact management")
         break       
+    else:
+        print("Invalid input")

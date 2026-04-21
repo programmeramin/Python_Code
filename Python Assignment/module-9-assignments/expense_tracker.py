@@ -52,7 +52,51 @@ while True:
             
             for i, (category, amount) in enumerate(transactions, start=1):
                 print(f"{i}. {category} - {amount}")   
+    
+    elif choice == "3":
+       if len(summary) == 0:
+        print("No data available!")
+       else:
+        print("\nCategory-wise Report:")
+        for category, total in summary.items():
+            print(f"{category} - {total}")
 
+    elif choice == "4":
+        if len(transactions) == 0:
+            print("No data available!")
+        else:
+            # Total expense
+            total_expense = sum(amount for _, amount in transactions)
+
+            # Highest & Lowest expense
+            highest = max(transactions, key=lambda x: x[1])
+            lowest = min(transactions, key=lambda x: x[1])
+
+            # Most used category (based on total spending)
+            most_used = max(summary, key=summary.get)
+
+            # Average expense
+            average = total_expense / len(transactions)
+
+            print("Analytics:")
+            print(f"Total Expense: {int(total_expense)}")
+            print(f"Highest Expense: {highest[0]} - {int(highest[1])}")
+            print(f"Lowest Expense: {lowest[0]} - {int(lowest[1])}")
+            print(f"Most Used Category: {most_used}")
+            print(f"Average Expense: {int(average)}")
+            
+    elif choice == "5":
+        search_category = input("Enter category to search: ").strip()
+
+        found = False
+
+        for i, (category, amount) in enumerate(transactions, start=1):
+            if category.lower() == search_category.lower():
+                print(f"{i}. {category} - {int(amount)}")
+                found = True
+
+        if not found:
+            print("No expense found for this category")
 
     elif choice == "8":
         print("Exiting program....")

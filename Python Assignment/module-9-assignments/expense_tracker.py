@@ -84,7 +84,7 @@ while True:
             print(f"Lowest Expense: {lowest[0]} - {int(lowest[1])}")
             print(f"Most Used Category: {most_used}")
             print(f"Average Expense: {int(average)}")
-            
+
     elif choice == "5":
         search_category = input("Enter category to search: ").strip()
 
@@ -97,6 +97,36 @@ while True:
 
         if not found:
             print("No expense found for this category")
+
+    elif choice == "6":
+        if len(transactions) == 0:
+            print("No expenses to remove!")
+        else:
+            
+            for i, (category, amount) in enumerate(transactions, start=1):
+                print(f"{i}. {category} - {int(amount)}")
+
+           
+                index = int(input("Enter index to remove: "))
+
+                if index < 1 or index > len(transactions):
+                    print("Invalid index!")
+                    continue
+
+                # Remove from list
+                removed = transactions.pop(index - 1)
+                print(f"Removed: {removed[0]} - {int(removed[1])}")
+
+                # Recalculate dictionary and set
+                summary.clear()
+                categories.clear()
+
+                for category, amount in transactions:
+                    categories.add(category)
+                    if category in summary:
+                        summary[category] += amount
+                    else:
+                        summary[category] = amount
 
     elif choice == "8":
         print("Exiting program....")

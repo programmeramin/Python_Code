@@ -127,9 +127,17 @@ while True:
                         summary[category] += amount
                     else:
                         summary[category] = amount
+    elif choice == "7":
+        if len(categories) == 0:
+            print("No categories available!")
+        else:
+            print("Categories:")
+            for cat in categories:
+                print(cat)
 
     elif choice == "8":
         print("Exiting program....")
+        break
 
     else:
         print("Invalid choice! Please try again")

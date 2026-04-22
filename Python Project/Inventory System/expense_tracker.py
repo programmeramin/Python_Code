@@ -38,7 +38,25 @@ while True:
             summary[category] = amount    
 
 
-    if choice == "2":
-        for i, (cate, amo), in enumerate(transactions, start=1):
-            print(f"{i}. {cate} - {amo}")
+    elif choice == "2":
+        if len(transactions) == 0:
+            print("no data found")
+        else:
+            for i, (cate, amo), in enumerate(transactions, start=1):
+              print(f"{i}. {cate} - {amo}")
 
+              print("====== summary ========")  
+              print(summary)
+    
+    elif choice == "3":
+        if len(summary) == 0:
+            print("No data found")
+        else:
+            print("\n categories wise data")
+            for category, amount in summary.items():
+                print(f"{category} - {amount}")
+
+
+
+
+     

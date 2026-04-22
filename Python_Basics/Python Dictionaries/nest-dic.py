@@ -31,3 +31,5 @@ for student, info in student.items():
     
     for key, value in info.items():
         print(key, ":", value)
+
+

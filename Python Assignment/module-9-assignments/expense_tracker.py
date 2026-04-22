@@ -19,31 +19,36 @@ while True:
     choice = input("Enter your choice: ")
 
     if choice == "1":
-        category = input("Enter your category: ")
+       category = input("Enter your category: ").strip()
 
-        # validation category
-        if category == "":
-            print("Category cannot be empty")
-            continue
+       # validation category
+       if category == "":
+         print("Category cannot be empty")
+         continue
 
-        amount = float(input("Enter your amount: "))
+       try:
+         amount = float(input("Enter your amount: "))
+       except ValueError:
+         print("Invalid amount!")
+         continue
 
-        if amount <= 0:
-            print("Enter a valid amount")
+       if amount <= 0:
+           print("Enter a valid amount")
+           continue   # 🔥 THIS WAS MISSING
 
-        # store transactions
-        transactions.append((category, amount))
+        # update dictionary
+       if category in summary:
+          summary[category] += amount
+       else:
+          summary[category] = amount 
 
-        # add category
-        categories.add(category)
+       # store transactions
+       transactions.append((category, amount))
 
-        #update dictionary
-        if category in summary:
-            summary[category] += amount
-        else:
-            summary[category] = amount 
+       # add category
+       categories.add(category)
 
-        print("Expense added successfully!")
+       print("Expense added successfully!")
 
     elif choice == "2":
         if len(transactions) == 0:

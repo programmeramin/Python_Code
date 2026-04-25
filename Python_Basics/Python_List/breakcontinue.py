@@ -9,7 +9,7 @@ for i in reversed(range(11, 1)):
     print("your ")
 
 
-a = [1, 2, 3, 4, "hello", 5, 6, 7, 8]
+a = [1, 2, 3, 4, "b", 5, 6, 7, 8]
 
 for i in a:
     if type(i) == type("b"):

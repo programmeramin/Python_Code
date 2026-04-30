@@ -16,7 +16,7 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-# ✔ Division function (with safety check)
+# ✔ Division function 
 def divide(a, b):
     if b == 0:
         return "Cannot divide by zero"
@@ -37,7 +37,6 @@ choice = input("Enter choice: ")
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-# Calling functions based on user choice
 if choice == '1':
     print("Result:", add(num1, num2))
 
@@ -55,11 +54,9 @@ else:
 
 # 📌 Step 5: Scope Practice
 
-
 # ✔ Global variable
 app_name = "Smart Utility Toolkit"
 
-# Function accessing global variable
 def show_app_name():
     print("\nApp Name:", app_name)
 
@@ -67,8 +64,6 @@ show_app_name()
 
 # 📌 Step 6: Lambda Practice
 
-
-# ✔ Lambda function to square a number
 square = lambda x: x * x
 
 num = int(input("\nEnter a number to square: "))
@@ -76,26 +71,24 @@ print("Squared value:", square(num))
 
 # 📌 Step 7: Map Function Usage
 
-# ✔ Creating a list
 numbers = [1, 2, 3, 4, 5]
 
-# ✔ Using map() to multiply each element by 2
+
 doubled_numbers = list(map(lambda x: x * 2, numbers))
 
 print("\nDoubled List:", doubled_numbers)
 
 # 📌 Step 8: Filter Function Usage
 
-# ✔ Using filter() to keep only even numbers
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 
 print("Even Numbers:", even_numbers)
 
-
+  
 # 📌 Step 9: Debugging Practice
 
 def wrong_add(a, b):
-    result = a + b   # forgot return
+    result = a + b   
 
 print("\nWrong Add Output (will be None):", wrong_add(5, 3))
 

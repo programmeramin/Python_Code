@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "age": 28,
+      "country": "USA"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "age": 25,
+      "country": "UK"
+    },
+    {
+      "id": 3,
+      "name": "Sara Khan",
+      "email": "sara@example.com",
+      "age": 27,
+      "country": "Bangladesh"
+    }
+  ]
+}

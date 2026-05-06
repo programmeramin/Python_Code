@@ -1,0 +1,6 @@
+id,name,email,age,country,signup_date
+1,John Doe,john@example.com,28,USA,2024-01-15
+2,Jane Smith,jane@example.com,25,UK,2024-02-10
+3,Michael Lee,michael@example.com,32,Canada,2024-03-05
+4,Sara Khan,sara@example.com,27,Bangladesh,2024-03-22
+5,David Kim,david@example.com,30,South Korea,2024-04-01

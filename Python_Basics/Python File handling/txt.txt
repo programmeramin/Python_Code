@@ -1,0 +1,16 @@
+User List:
+
+1. Name: John Doe
+   Email: john@example.com
+   Age: 28
+   Country: USA
+
+2. Name: Jane Smith
+   Email: jane@example.com
+   Age: 25
+   Country: UK
+
+3. Name: Sara Khan
+   Email: sara@example.com
+   Age: 27
+   Country: Bangladesh

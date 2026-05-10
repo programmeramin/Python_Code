@@ -111,9 +111,9 @@ while True:
     else:
         print("Invalid choice!")
 
-file = open("expenses.csv", "r")  # write করতে গেলে error
-file.write("test")
-file.close()
+# file = open("expenses.csv", "r")  # write করতে গেলে error
+# file.write("test")
+# file.close()
 
 # write way
 with open("expenses.csv", "a") as file:

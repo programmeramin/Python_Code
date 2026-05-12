@@ -1,6 +1,6 @@
 number = [5, 2, 9, 1, 5, 6, 34,2,23,34,23,45,67,89,90,12,34,56,78,90]
 
-print(sorted(number))
+print(sorted(number, reverse=True))
 
 mark = [23, 45, 67, 89, 90, 12, 34, 56, 78, 90]
 mark.sort()
@@ -27,23 +27,30 @@ print(a, b)
 
 arr = [5, 2, 9, 1, 5, 6, 34,2,23,34,23,45,67,89,90,12,34,56,78,90]
 target = 34
-
+ 
 for i in range(len(arr)):
     if arr[i] == target:
         print("Element found at index:", i)
         break
-
+  
 # binary search
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 target = 5
 
 left, right = 0, len(a) - 1
 
-while left <= right:
+while left <= right: 
     mid = left + right // 2
     if a[mid] == target:
         print("Element found at index:", mid)
         break
     elif target > a[mid]:
-        left = mid + 1
+        left = mid + 1  
     else:        right = mid - 1
+
+
+
+a = "4"
+b = 3
+
+print("dive", a * b)

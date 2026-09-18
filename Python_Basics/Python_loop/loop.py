@@ -10,3 +10,7 @@ while True:
         print("Goodbye!")
         break
     print(f"Hello, {name}!")
+
+num = 10
+for i in range (1, num):
+    print(num, "x", i, "=", num * i)  

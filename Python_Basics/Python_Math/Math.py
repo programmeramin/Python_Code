@@ -7,13 +7,11 @@ b = 3.1416
 print(b)
 print(round(b, 2))
 
-
 c = [4, 5, 6, 77, 8, 9]
 
 d = 23
 
 print(max(c))
-
 
 print(max(2,3,4,65,34,23,654,))
 print(min(2,3,4,65,34,23,654,))

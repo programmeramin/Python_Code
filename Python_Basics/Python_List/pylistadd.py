@@ -1,36 +1,52 @@
-#Python - Add List Items 
-#To add an item to the end of the list, use the append() method:
+# #Python - Add List Items 
+# #To add an item to the end of the list, use the append() method:
 
-thislist = ["apple", "mango", "cherry"]
-thislist.append("orange")
-print(thislist)
-
-
-thislist.insert(1, "guava")
-print(thislist)
+# thislist = ["apple", "mango", "cherry"]
+# thislist.append("orange")
+# print(thislist)
 
 
-#Extend List To append elements from another list to the current list, use the extend() method.
-
-thislist = ["apple", "orange", "cherry"]
-tropical = ["mango", "guava"]
-thislist.extend(tropical)
-print(thislist)
+# thislist.insert(1, "guava")
+# print(thislist)
 
 
-"""Add Any Iterable
-The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.)."""
+# #Extend List To append elements from another list to the current list, use the extend() method.
 
-thislist = ["apple", "banana", "cherry"]
-thistuple = ("kiwi", "orange")
-thislist.extend(thistuple)
-print(thislist)
+# thislist = ["apple", "orange", "cherry"]
+# tropical = ["mango", "guava"]
+# thislist.extend(tropical)
+# print(thislist)
 
 
-list1 = ["a", "b" , "c"]
-list2 = [1, 2, 3]
+# """Add Any Iterable
+# The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.)."""
 
-for x in list2:
-  list1.append(x)
+# thislist = ["apple", "banana", "cherry"]
+# thistuple = ("kiwi", "orange")
+# thislist.extend(thistuple)
+# print(thislist)
 
-print(list1)
+
+# list1 = ["a", "b" , "c"]
+# list2 = [1, 2, 3]
+
+# for x in list2:
+#   list1.append(x)
+
+# print(list1)
+
+#List - container can hold multiple data
+list1 = [1, 3,4, True, "hello", 3.4]
+
+print(list1[1])
+
+
+fruits = ["apple", "banana", "Guava", "Mango", "cherry"]
+fruits.append("kiwi")
+print(fruits[1:4]) #slicing
+
+add_fruits = fruits + ["orange", "kiwi"]
+print(add_fruits)
+
+fruits = ["lichi","apple", "banana", "Guava", "Mango", "cherry"]
+print(fruits.sort()) #sort the list

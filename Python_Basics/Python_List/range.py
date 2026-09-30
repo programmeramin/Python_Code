@@ -14,3 +14,10 @@ for i in d:
 
 for i in reversed(range(1, 11)):
     print(i)    
+
+
+even_odd = range(0, 20)
+for num in even_odd:
+    if num % 2 == 0:
+        print(f"even : {num}")
+   

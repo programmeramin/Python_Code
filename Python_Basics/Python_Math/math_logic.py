@@ -15,13 +15,12 @@ print(min(f))
 print(divmod(11, 5))   # quotient and remainder vagsesh vagfol
 
 #id id is being work where is locate variable
-
+ 
 x = 10
 print(id(x))
 
 #eval
 print(eval("23+34"))
-
 
 text = "Hello World"
 print(text.isalpha())  

@@ -1,1 +1,2 @@
 My name is amin islam, my age 100 years old
+This is new data added to the file.

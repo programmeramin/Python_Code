@@ -9,7 +9,6 @@ running = True
 while running:
     price = float(input('Enter the price of the product (press 0 to stop): '))
 
-
     if price == 0:
       running = False
     elif  price < 0:
@@ -18,13 +17,11 @@ while running:
         total = total + price
         count = count + 1   
 
-
 if count == 0:
     print("No item purchased")
 else:
     print("\nTotal Items:", count)    
     print("\nTotal Price:", total)
-
 
 if total >= 5000:
     discount = total * 0.20

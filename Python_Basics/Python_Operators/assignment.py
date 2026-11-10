@@ -33,11 +33,11 @@ x = 10
 x %= 4
 print(x) # 2
 
-x = 2
+x = 5
 x **= 3   # x = x ** 3
-print(x)   # 8
+print(x)   # 125
 
 
-x = 10
+x = 60
 x //= 3   # x = x // 3
 print(x)   # 3

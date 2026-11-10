@@ -31,7 +31,6 @@ if answer.lower() == "b":
 else:
     print("Wrong! Correct answer is Guido van Rossum")
 
-
 # Question 3
 print("\n3. What is 5 + 5?")
 print("a) 8")
@@ -53,6 +52,7 @@ print("b) Alexander the graham bell ")
 print("c) Bill gates")
 
 answer = input("Enter your answer: ")
+
 if answer.lower() == "a":
     print("Correct!")
     score += 1
@@ -65,7 +65,7 @@ print("Your Score:", score, "/ 4")
 
 if score == 4:
     print("Excellent!")
-elif score == 30:
+elif score == 3:
     print("Good job!")
 else:
     print("Keep practicing!")
